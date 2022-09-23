@@ -1,42 +1,38 @@
 ﻿using System;
-
+using System.Management.Instrumentation;
 
 
 namespace consoleApplication1
 {
-
     public class Tank
     {
-        protected string Name;
-        protected int Boekomplekt;
-        protected int LvlManevr;
-
-        public Tank(int boekomplekt, int lvlManevr, string name)
+        public int x;
+        public int y;
+        
+        public Tank(int x, int y)
         {
-
-            this.Boekomplekt = boekomplekt;
-            this.LvlManevr = lvlManevr;
-            this.Name = name;
+            this.x = x;
+            this.y = y;
         }
 
-        public Tank()
+        public void SetCoordinates(int x, int y)
         {
-            Boekomplekt = 0;
-            LvlManevr = 0;
-            Name = "null";
+            this.x = x;
+            this.y = y;
         }
 
-        public void Print()
+        public int Manevr(Tank T)
         {
-            Console.WriteLine("name - " + Name);
-            Console.WriteLine("boekomplekt = " + Boekomplekt + " lvlManevr = " + LvlManevr);
+            // if (...) {x+-1}
+            // if (...){y+-1}
         }
 
         class Program
         {
             static void Main(string[] args)
             {
-
+                Tank T34 = new Tank();
+                T34.SetCoordinates(0, 0);
             }
         }
     }
