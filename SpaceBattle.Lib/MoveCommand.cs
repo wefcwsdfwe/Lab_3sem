@@ -9,7 +9,7 @@ namespace SpaceBattle.Lib
         }
         public void Execute()
         {
-            ObjThatMove.position += ObjMove.velocity;
+            ObjMove.position += ObjMove.velocity;
         }
     }
 }
