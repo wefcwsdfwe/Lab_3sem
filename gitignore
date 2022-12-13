@@ -144,7 +144,7 @@ _TeamCity*
 
 # Coverlet is a free, cross platform Code Coverage Tool
 coverage*.json
-# coverage*.xml
+coverage*.xml
 coverage*.info
 
 # Visual Studio code coverage results
@@ -377,8 +377,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
-.vscode/*
-*.vscode
+.vscode/
 
 # Local History for Visual Studio Code
 .history/
@@ -392,3 +391,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+coveragereport
