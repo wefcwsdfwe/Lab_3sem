@@ -391,4 +391,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+<<<<<<< HEAD
 coveragereport
+=======
+>>>>>>> Move
